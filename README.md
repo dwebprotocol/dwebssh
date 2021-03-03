@@ -1,6 +1,6 @@
 # dwebssh
 
-Run SSH over [dSwarm](https://github.com/hyperswarm)!
+Run SSH over [dSwarm](https://github.com/dwebprotocol/dswarm)!
 
 ```
 npm install -g dwebssh

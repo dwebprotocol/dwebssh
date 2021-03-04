@@ -1,25 +1,25 @@
 {
-  "name": "hyperssh",
-  "version": "2.0.0",
-  "description": "Run SSH over hyperswarm!",
+  "name": "dwebssh",
+  "version": "1.0.0",
+  "description": "Run SSH over the dWeb!",
   "main": "index.js",
   "dependencies": {
-    "hyperswarm": "^2.0.4",
+    "dswarm": "^1.0.0",
     "pump": "^3.0.0"
   },
   "devDependencies": {},
   "bin": {
-    "hyperssh-server": "./server.js",
-    "hyperssh": "./client.js"
+    "dwebssh-server": "./server.js",
+    "dwebssh": "./client.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/hyperssh.git"
+    "url": "https://github.com/dwebprotocol/dwebssh.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mafintosh/hyperssh/issues"
+    "url": "https://github.com/dwebprotocol/dwebssh/issues"
   },
-  "homepage": "https://github.com/mafintosh/hyperssh"
+  "homepage": "https://dwebx.org"
 }

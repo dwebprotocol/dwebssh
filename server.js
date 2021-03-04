@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const hyperswarm = require('hyperswarm')
+const dswarm = require('dswarm')
 const { execSync } = require('child_process')
 const net = require('net')
 const pump = require('pump')
@@ -19,9 +19,9 @@ try {
 
 const usr = process.argv[2] || os.userInfo().username
 
-console.log('To connect to this ssh server, on another computer run:\nhyperssh ' + fingerprint + ' ' + usr)
+console.log('To connect to this ssh server, on another computer run:\ndwebssh ' + fingerprint + ' ' + usr)
 
-const sw = hyperswarm()
+const sw = dswarm()
 
 sw.on('connection', function (connection) {
   pump(connection, net.connect(22, 'localhost'), connection)

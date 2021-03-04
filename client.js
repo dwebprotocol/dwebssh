@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { spawn } = require('child_process')
-const hyperswarm = require('hyperswarm')
+const dswarm = require('dswarm')
 const net = require('net')
 const pump = require('pump')
 const os = require('os')
@@ -9,14 +9,14 @@ const path = require('path')
 const fs = require('fs')
 
 if (!process.argv[3]) {
-  console.error('Usage: hyperssh [type] [fingerprint] [user?] [ssh-options...]')
+  console.error('Usage: dwebssh [type] [fingerprint] [user?] [ssh-options...]')
   process.exit(1)
 }
 
 const usr = process.argv[4] || os.userInfo().username
 const type = process.argv[2]
 const fingerprint = process.argv[3]
-const sw = hyperswarm()
+const sw = dswarm()
 
 const name = type + ' ' + fingerprint
 const argv = process.argv.slice(5)

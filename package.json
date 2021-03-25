@@ -16,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/dwebprotocol/dwebssh.git"
   },
-  "author": "Mathias Buus (@mafintosh)",
+  "author": "peeps (@peeps)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dwebprotocol/dwebssh/issues"
